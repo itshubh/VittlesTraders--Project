@@ -1,0 +1,14 @@
+<h1 class = "pb-4">Fresh Fruits</h1>
+
+<div class="row row-cols-2 row-cols-lg-6 g-lg-3 py-4">
+
+    <% if(fruits != '') { %>
+        <% fruits.forEach(function(category,index) { %>
+    <a href = "/categories/<%- category.name %>" class = "col text-center category__link ">
+ <div class="category__img shadow">
+     <img src="/uploads/<%- category.image %>" alt = "<%- category.name %>" loading = " lazy ">
+ </div>
+ <div class="pt-1"><%- category.name %></div> 
+</a>
+<% }) %>
+ <% }%>

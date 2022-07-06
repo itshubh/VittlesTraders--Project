@@ -1,0 +1,12 @@
+<h1 class = "pb-4">Random Fruits</h1>
+
+<div class="row row-cols-2 row-cols-lg-6 g-lg-3 py-4">
+
+    <% if(fruits != '') { %>
+    <a href = "/categories/<%- fruits.name %>" class = "col text-center category__link ">
+ <div class="category__img shadow">
+     <img src="/uploads/<%- fruits.image %>" alt = "<%- fruits.name %>" loading = " lazy ">
+ </div>
+ <div class="pt-1"><%- fruits.name %></div> 
+</a>
+ <% }%>
